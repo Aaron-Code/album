@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<title>动态相册</title>
+	<embed id="embed_sound_id" src="music/郑爽 - 爱的华尔兹.mp3" type="audio/x-wav" autostart="true" width="0" height="0" loop="false"/>
+	<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	html,body{
+		width: 100%;
+		height: 100%;
+	}
+	body{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	}
+	.one{
+		position: fixed;
+		top: 0px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		background: url(img/bg.jpg);
+		background-size: cover;
+		z-index: -1;
+	}
+	.two{
+		width: 500px;
+		height: 400px;
+		background: url(img/test.jpg);
+		background-size: cover;
+		animation: aa 20s infinite;
+	}
+	@keyframes aa{
+		0%{background-position: 0 0;}
+		100%{background-position: 100% 0;}
+	}
+
+
+	</style>
+</head>
+<body>
+	<div class="one"></div>
+	<div class="two"></div>
+</body>
+</html>
